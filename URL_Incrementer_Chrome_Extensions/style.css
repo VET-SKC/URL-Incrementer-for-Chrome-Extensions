@@ -1,0 +1,29 @@
+#url-increment-floating-button {
+  position: fixed; /* 固定悬浮 */
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999; /* 确保按钮在页面绝大多数元素之上 */
+  
+  /* 下面是美化样式 */
+  width: 48px;
+  height: 48px;
+  background-color: #0099ff; /* #007bff */
+  border: none;
+  border-radius: 50%; /* 圆形按钮 */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+
+  background-size: 75%; /* 图标占按钮大小的比例 */
+  background-repeat: no-repeat;
+  background-position: center; /* calc(50% - 0px) calc(50% + 0px); */
+}
+
+#url-increment-floating-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* 鼠标悬浮时放大一点 */
+}
+
+#url-increment-floating-button:active {
+  transform: scale(1.0); /* 鼠标点击时恢复 */
+}
